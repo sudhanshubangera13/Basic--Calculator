@@ -1,0 +1,73 @@
+/* Basic styling for calculator */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f3f3f3;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  width: 280px;
+  background: #222;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+#display {
+  width: 95%;
+  height: 50px;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  text-align: right;
+  background-color: aliceblue;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #444;
+  color: white;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+.operator {
+  background: #f39c12;
+}
+
+.equal {
+  background: #27ae60;
+  grid-row: span 2;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  color: #888;
+}
